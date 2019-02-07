@@ -1,4 +1,4 @@
-package org.mtd.javabrains.messenger.resources;
+package org.mtd.messenger.resources;
 
 import java.net.URI;
 import java.util.List;
@@ -16,12 +16,16 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
-import org.mtd.javabrains.messenger.model.Profile;
-import org.mtd.javabrains.messenger.service.ProfileService;
+import org.mtd.messenger.model.Profile;
+import org.mtd.messenger.service.ProfileService;
 
 @Path("/profiles")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
+
+/**
+ * The various endpoints used to manipulate the Profiles with CRUD.
+ */
 public class ProfileResource {
 	private ProfileService profileService = new ProfileService();
 	

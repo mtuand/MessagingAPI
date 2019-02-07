@@ -1,4 +1,4 @@
-package org.mtd.javabrains.messenger.resources;
+package org.mtd.messenger.resources;
 
 import java.net.URI;
 import java.util.List;
@@ -17,13 +17,17 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
-import org.mtd.javabrains.messenger.model.Message;
-import org.mtd.javabrains.messenger.resources.beans.MessageFilterBeans;
-import org.mtd.javabrains.messenger.service.MessageService;
+import org.mtd.messenger.model.Message;
+import org.mtd.messenger.resources.beans.MessageFilterBeans;
+import org.mtd.messenger.service.MessageService;
 
 @Path("/messages")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
+
+/**
+ * The various endpoints used to manipulate the Messages with CRUD.
+ */
 public class MessageResource {
 	
 	MessageService messageService = new MessageService();

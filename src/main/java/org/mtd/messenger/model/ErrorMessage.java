@@ -1,4 +1,4 @@
-package org.mtd.javabrains.messenger.model;
+package org.mtd.messenger.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 

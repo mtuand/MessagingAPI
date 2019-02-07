@@ -1,14 +1,17 @@
-package org.mtd.javabrains.messenger.service;
+package org.mtd.messenger.service;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 
-import org.mtd.javabrains.messenger.database.Database;
-import org.mtd.javabrains.messenger.exception.DataNotFoundException;
-import org.mtd.javabrains.messenger.model.Message;
+import org.mtd.messenger.database.Database;
+import org.mtd.messenger.exception.DataNotFoundException;
+import org.mtd.messenger.model.Message;
 
+/**
+ * Receives calls from Annotated Methods and updates the Database class. 
+ */
 public class MessageService {
 	
 	private Map<Long, Message> messages = Database.getMessages();

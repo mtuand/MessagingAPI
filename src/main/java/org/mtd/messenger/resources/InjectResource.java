@@ -1,4 +1,4 @@
-package org.mtd.javabrains.messenger.resources;
+package org.mtd.messenger.resources;
 
 import javax.ws.rs.CookieParam;
 import javax.ws.rs.GET;
@@ -8,6 +8,10 @@ import javax.ws.rs.Path;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.UriInfo;
+
+/**
+ * Special Annotations used to narrow down and specify querying parameters for GET.
+ * */
 
 public class InjectResource {
 	

@@ -1,11 +1,14 @@
-package org.mtd.javabrains.messenger.database;
+package org.mtd.messenger.database;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.mtd.javabrains.messenger.model.Message;
-import org.mtd.javabrains.messenger.model.Profile;
+import org.mtd.messenger.model.Message;
+import org.mtd.messenger.model.Profile;
 
+/* * 
+ * Database implemented using HashMaps in lieu of a real DB.
+ * */
 public class Database {
 	
 	private static Map<Long, Message> messages = new HashMap<>();

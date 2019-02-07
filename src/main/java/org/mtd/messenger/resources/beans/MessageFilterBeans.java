@@ -1,7 +1,11 @@
-package org.mtd.javabrains.messenger.resources.beans;
+package org.mtd.messenger.resources.beans;
 
 import javax.ws.rs.QueryParam;
 
+
+/* * 
+ * Bean to reduce argument passing within resource classes. 
+ * */
 public class MessageFilterBeans {
 	
 	private @QueryParam("year") int year;

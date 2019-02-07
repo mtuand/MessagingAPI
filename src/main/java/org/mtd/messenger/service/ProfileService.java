@@ -1,12 +1,17 @@
-package org.mtd.javabrains.messenger.service;
+package org.mtd.messenger.service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import org.mtd.javabrains.messenger.database.Database;
-import org.mtd.javabrains.messenger.model.Profile;
+import org.mtd.messenger.database.Database;
+import org.mtd.messenger.model.Profile;
 
+
+
+/**
+ * Receives calls from Annotated Methods and updates the Database class. 
+ */
 public class ProfileService {
 
 	private Map<String,Profile> profiles = Database.getProfiles();

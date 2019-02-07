@@ -1,4 +1,4 @@
-package org.mtd.javabrains.messenger;
+package org.mtd.messenger;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

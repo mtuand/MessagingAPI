@@ -1,14 +1,18 @@
-package org.mtd.javabrains.messenger.exception;
+package org.mtd.messenger.exception;
 
 
 import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
-import org.mtd.javabrains.messenger.model.ErrorMessage;
+import org.mtd.messenger.model.ErrorMessage;
 
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+
+/**
+ * Exception Mapper for Generic Exceptions.
+ **/
 
 @Provider
 public class GenericExceptionMapper implements ExceptionMapper<Throwable> {

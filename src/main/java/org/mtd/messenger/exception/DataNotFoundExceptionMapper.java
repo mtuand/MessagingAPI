@@ -1,11 +1,15 @@
-package org.mtd.javabrains.messenger.exception;
+package org.mtd.messenger.exception;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
-import org.mtd.javabrains.messenger.model.ErrorMessage;
+import org.mtd.messenger.model.ErrorMessage;
+
+/**
+ * Exception Mapper for Data Not Found.  
+ **/
 
 @Provider
 public class DataNotFoundExceptionMapper implements ExceptionMapper<DataNotFoundException>{
